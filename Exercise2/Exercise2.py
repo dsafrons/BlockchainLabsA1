@@ -16,7 +16,7 @@ df["Value (USD)"] = (
 
 print(row)
 print("\ntxn hash:", row["Transaction Hash"])
-
+# txn hash: 0xbac8ee73d816f04798b78bde69f04b969618879a1bf22661c936d8e9aa6e085c
 """
 Transaction Hash    0xbac8ee73d816f04798b78bde69f04b969618879a1bf2...
 Status                                                        Success
