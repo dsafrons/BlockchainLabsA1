@@ -66,6 +66,9 @@ def scrape_phishing_banner(address, timeout=15, min_delay=0.7, max_delay=1.5, ma
 
 
 def read_addresses_csv(path="addresses.csv"):
+    if not os.path.exists(path):
+        raise Exception(f"File {path} does not exist in order to read addresses. Please create addresses.csv first.")
+    
     with open(path, "r", encoding="utf-8") as f:
         data = f.read()
 
